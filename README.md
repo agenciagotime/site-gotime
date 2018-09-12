@@ -1,4 +1,4 @@
-# site-gotime
+# Gotime
 Novo site da Agência Gotime
 
 ## Getting started
