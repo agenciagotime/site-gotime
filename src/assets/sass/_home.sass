@@ -1,0 +1,325 @@
+//  ================================ Navigation ================================
+.nav__wrapper
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: $space*3 0 0
+
+.logo
+  width: $space*5
+  height: 100%
+  transition: transform .4s ease-in-out
+  &hover
+    transform: scale(1.1)
+
+.menu
+  justify-content: space-between
+  width: $space*50
+  display: none 
+
+.menu__toggle
+  width: $space*5
+  height: $space*5
+  padding-top: 12px
+  span 
+    position: absolute
+    width: $space*4
+    height: 3px
+    margin-left: -12px
+    background: $azul
+    transition: all .4s
+    z-index: 5
+  span:nth-child(2)
+    margin: 10px 0 0 -4px
+    width: $space*3
+
+.active
+  span
+    background-color: $branco
+    z-index: 10
+  span:nth-child(1)
+    transform: rotate(45deg) translate(3px, 5px)
+  span:nth-child(2)
+    width: $space*4
+    transform: rotate(-45deg) translate(-3px, -9px)
+
+
+//  ================================ Menu Mobile ================================
+.menu__mobile
+  visibility: hidden
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100vh
+  background-color: $azul
+  transform: translate3d(0, -100vh, 0)
+  transition: all .8s
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275)
+  z-index: 4
+
+.mobile__nav
+  position: relative
+  text-align: left
+  left: 15%
+  top: 20%
+
+.menu__item
+  padding: $space*2 0
+  text-transform: uppercase
+
+.menu__link
+  font-size: 1.2em
+  color: $branco
+
+.mobile__social
+  position: absolute
+  left: 15%
+  bottom: 15%
+  height: $space*6
+  width: 160px
+  display: flex
+  justify-content: space-between
+  a 
+    margin-top: $space
+    fill: $branco
+
+.show
+  transform: translate3d(0, 0vh, 0)
+  visibility: visible
+  opacity: 1
+
+.social__icon
+  position: relative
+  height: 100%
+
+
+//  ================================ Header ================================
+.header__text 
+  margin: $space*8 0 0
+  text-align: left
+
+.header__description
+  padding: $space*2 0
+
+.check
+  position: relative
+  top: $space
+
+//  ================================ Sobre a Agência ================================
+#sobre 
+  margin: $space*8 0 0
+
+.about__title
+  padding: $space*4 0 $space*3
+
+.about__problems, .about__solutions
+  padding: $space 0
+  text-align: left
+
+.problem
+  position: relative
+  top: 7px
+  padding-right: 4px
+
+
+//  ================================ Últimos Trabalhos ================================
+#cases
+  margin: $space *6 0 0
+  h2
+    padding: $space*2 0
+
+.case__background
+  position: absolute
+  width: 100%
+  height: 260px
+  margin: $space*4 0 0 -10%
+
+.bg
+  width: 100%
+  height: 100%
+  background-color: #FC78AA
+
+.case__text
+  text-align: left
+
+.case__content
+  position: relative
+  margin-top: $space*18
+
+.case__title
+  padding: $space*3 0 $space*2
+
+
+//  ================================ Contato ================================
+#contato 
+  margin: $space*4 0 0
+
+.contact__title
+  padding: $space*3 0
+
+.contact__buttons
+  display: flex
+  flex-direction: column
+  padding: $space*2 0 $space*4
+
+.btn__whatsapp
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 60px
+  font-size: 20px
+  color: $branco
+  background-color: #1EBEA5
+  margin: $space*2 0
+
+.whatsapp
+  width: 30px
+  height: 30px
+  margin: 0 $space
+
+.btn__email
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 60px
+  font-size: 20px
+  color: $branco
+  background-color: $azul
+
+.email
+  width: 36px
+  height: 36px
+  margin: 0 12px 0 0
+
+.input__container
+  position: relative
+  padding: $space 0
+  margin: $space*2 auto
+  #name, #email, #message
+    width: 100%
+    padding: 20px 0 5px
+    background: transparent
+    border-style: none
+    border-bottom: 1px solid $azul-escuro 
+  
+.floating__label
+  position: absolute
+  top: 10px
+  left: 0
+  color: rgba(0, 0, 0, .4)
+  transition: all .2s ease-in-out
+
+input:focus+.floating__label, input:valid+.floating__label
+  font-size: 14px
+  top: 0
+  color: $azul
+
+.form__error
+  position: relative
+  font-size: 14px
+  margin-bottom: 0
+  overflow: hidden
+  color: rgba(255, 0, 0, .6)
+  opacity: 0
+  transition: all .5s
+
+.project__type
+  text-align: left
+
+.project__options
+  padding: $space*2 0
+
+input[type=radio] 
+  display: none
+
+input[type=radio]:checked+.radio__button
+  color: $azul
+
+input[type=radio]:checked+.radio__button:before
+  border: 1px solid $azul
+  background-color: $azul
+  background-image: url("../img/checked.svg")
+  background-position: 50%
+  background-size: contain
+  background-repeat: no-repeat
+  transition: all .2s ease-in-out
+
+.radio__button
+  display: inline-block
+  font-size: 21px
+  line-height: 1.8
+  color: rgba(0,0,0,.4)
+  margin-right: $space*6
+  cursor: pointer
+  transition: all .2s ease-in-out
+
+.radio__button:before
+  content: ""
+  width: 12px 
+  height: 12px
+  display: inline-block
+  border: 1px solid rgba(0,0,0,.4)
+  border-radius: 50%
+  margin-right: $space
+
+
+//  ================================ Footer ================================
+.footer 
+  margin: $space*8 0 0
+  background-color: #f6f6f6
+
+.logo__footer
+  margin: 0 auto
+  padding: $space*5 0 $space*2
+
+.footer__social
+  position: relative
+  display: flex
+  justify-content: space-between
+  width: 180px
+  height: 24px
+  margin: $space*4 auto $space*2
+
+.facebook, .instagram, .github
+  fill: $azul-escuro
+
+.copyright
+  font-size: 14px
+  padding: $space*4 0
+
+//  ================================ Animações ================================
+.menu__item.animate
+  .menu__link
+    animation-name: fadeInDown
+    animation-fill-mode: both
+    animation-duration: 1s
+  &:nth-child(1)
+    > a
+      animation-delay: .3s
+  &:nth-child(2)
+    > a
+      animation-delay: .35s
+  &:nth-child(3)
+    > a 
+      animation-delay: .4s
+  &:nth-child(4)
+    > a 
+      animation-delay: .45s
+
+.mobile__social.animate
+  animation-name: fadeInDown
+  animation-fill-mode: both
+  animation-duration: .5s
+  animation-delay: .45s
+
+@keyframes fadeInDown
+  from 
+    opacity: 0
+    transform: translate3d(0, -100%, 0)
+  to
+    opacity: 1
+    transform: translate3d(0, 0, 0)
+
+  
+
