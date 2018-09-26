@@ -114,14 +114,53 @@
   padding: $space*4 0 $space*3
 
 .about__problems, .about__solutions
+  margin: $space*3 auto 
   padding: $space 0
+  max-width: 580px
   text-align: left
+
+.about__solutions
+  margin-bottom: 0
 
 .problem
   position: relative
   top: 7px
   padding-right: 4px
 
+
+//  ================================ Nossos Serviços ================================
+#servicos 
+  margin: $space *6 0 0
+
+.services__wrapper
+  display: flex
+  flex-direction: column
+  margin: $space*4 0
+
+.services__nav
+  display: flex
+  position: relative
+  flex-direction: column
+
+.btn__flat
+  position: relative
+  text-align: left
+  padding: 16px 0 16px $space
+  text-transform: uppercase
+  background-color: transparent 
+  font-size: 16px
+  color: #6772e5
+
+.service__selection 
+  position: absolute
+  width: 100%
+  height: 48px
+  border-radius: 4px
+  background: $branco
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)
+  will-change: transform
+  transform-origin: 50% 0
+  display: block
 
 //  ================================ Últimos Trabalhos ================================
 #cases
@@ -132,7 +171,7 @@
 .case__background
   position: absolute
   width: 100%
-  height: 260px
+  height: calc(30vw + 140px)
   margin: $space*4 0 0 -10%
 
 .bg
@@ -141,6 +180,8 @@
   background-color: #FC78AA
 
 .case__text
+  margin: 0 auto
+  max-width: 600px
   text-align: left
 
 .case__content
@@ -161,17 +202,20 @@
 .contact__buttons
   display: flex
   flex-direction: column
-  padding: $space*2 0 $space*4
+  align-items: center
+  justify-content: space-between
+  padding: $space*4 0
+  height: 200px
 
 .btn__whatsapp
   display: flex
   justify-content: center
   align-items: center
   height: 60px
+  width: 200px
   font-size: 20px
   color: $branco
   background-color: #1EBEA5
-  margin: $space*2 0
 
 .whatsapp
   width: 30px
@@ -183,6 +227,7 @@
   justify-content: center
   align-items: center
   height: 60px
+  width: 200px
   font-size: 20px
   color: $branco
   background-color: $azul
@@ -195,7 +240,8 @@
 .input__container
   position: relative
   padding: $space 0
-  margin: $space*2 auto
+  margin: $space*3 auto
+  max-width: 450px
   #name, #email, #message
     width: 100%
     padding: 20px 0 5px
@@ -320,6 +366,15 @@ input[type=radio]:checked+.radio__button:before
   to
     opacity: 1
     transform: translate3d(0, 0, 0)
+
+
+//  ================================ Media Queries ================================
+@media only screen and (min-width: 650px)
+  .btn__primary, .btn__secondary
+    margin: $space*6 0 
+  .contact__buttons
+    flex-direction: row
+    justify-content: space-evenly
 
   
 
