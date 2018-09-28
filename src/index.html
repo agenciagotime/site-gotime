@@ -260,13 +260,13 @@
       <h2 class="services__title">O que fazemos</h2>
       <div class="services__wrapper">
         <nav class="services__nav">
-          <span class="service__selection"></span>
-          <button class="btn btn__flat" data-target="">Websites</button>
-          <button class="btn btn__flat" data-target="">Design</button>
-          <button class="btn btn__flat" data-target="">Aplicativos</button>
-          <button class="btn btn__flat" data-target="">Estratégia</button>
+          <span class="service__selection" id="service__button"></span>
+          <button onclick="serviceSelector(1)" class="btn btn__flat" id="defaultOpen">Websites</button>
+          <button onclick="serviceSelector(2)" class="btn btn__flat">Design</button>
+          <button onclick="serviceSelector(3)" class="btn btn__flat">Aplicativos</button>
+          <button onclick="serviceSelector(4)" class="btn btn__flat">Estratégia</button>
         </nav>
-        <div class="services__card">
+        <div class="services__card" id="1">
           <div class="card__wrapper">
             <div class="card__image">
               <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 470 470">
@@ -282,7 +282,75 @@
                 <p>Com uma abordagem ágil de desenvolvimento que permite entregas rápidas e de costante colaboração com
                   o cliente, criamos sites incríveis e sob medida que vão impulsionar seu negócio.</p>
               </div>
+              <span class="pre__price">A partir de:</span>
               <h2>R$ 999</h2>
+            </div>
+            <div class="btn btn__primary">Contratar</div>
+          </div>
+        </div>
+        <div class="services__card" id="2">
+          <div class="card__wrapper">
+            <div class="card__image">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 470 470">
+                <g fill="#3047ff">
+                  <path d="M463 23H8c-5 0-8 3-8 7v410c0 4 3 8 8 8h455c4 0 7-4 7-8v-80a7 7 0 1 0-15 0v73H15V98h440v232a7 7 0 1 0 15 0V30c0-4-3-7-7-7zM15 38h278v45H15V38zm293 45V38h147v45H308z" />
+                  <path d="M382 52a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM341 52a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM423 52a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM149 226c3 0 5-2 6-5l17-58a8 8 0 0 0-14-4l-13 41-11-20a7 7 0 0 0-13 0l-12 20-13-41a7 7 0 1 0-14 4l17 58a8 8 0 0 0 14 1l14-23 14 23c2 3 5 4 8 4zM206 226a8 8 0 0 0 8-4l14-23 14 23a8 8 0 0 0 14-1l17-58a8 8 0 0 0-14-4l-13 41-12-20a7 7 0 0 0-12 0l-12 20-13-41a7 7 0 1 0-14 4l17 58c1 3 3 5 6 5zM369 154c-4-1-8 1-9 5l-13 41-12-20a7 7 0 0 0-13 0l-12 20-12-41a8 8 0 0 0-14 4l17 58a8 8 0 0 0 14 1l14-23 14 23a8 8 0 0 0 14-1l17-58c1-4-1-8-5-9zM137 269c0-5-4-8-8-8H89c-4 0-7 3-7 8v40c0 4 3 7 7 7h40c4 0 8-3 8-7v-40zm-15 32H97v-25h25v25zM129 331H89c-4 0-7 3-7 8v40c0 4 3 7 7 7h40c4 0 8-3 8-7v-40c0-5-4-8-8-8zm-7 40H97v-25h25v25zM367 281h-30a7 7 0 1 0 0 15h30a7 7 0 1 0 0-15zM307 281H159a7 7 0 1 0 0 15h148a7 7 0 1 0 0-15zM367 351h-30a7 7 0 1 0 0 15h30a7 7 0 1 0 0-15zM307 351H159a7 7 0 1 0 0 15h148a7 7 0 1 0 0-15z" />
+                </g>
+              </svg>
+            </div>
+            <div class="card__content">
+              <h3>Design</h3>
+              <div class="card__text">
+                <p>Desenvolvemos interfaces incríveis e únicas com foco em resultados, ajudando startups e pequenas
+                  empresas com orçamentos limitados a criar um design diferenciado para seus produtos.</p>
+              </div>
+              <span class="pre__price">A partir de:</span>
+              <h2>R$ 599</h2>
+            </div>
+            <div class="btn btn__primary">Contratar</div>
+          </div>
+        </div>
+        <div class="services__card" id="3">
+          <div class="card__wrapper">
+            <div class="card__image">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 470 470">
+                <g fill="#3047ff">
+                  <path d="M463 23H8c-5 0-8 3-8 7v410c0 4 3 8 8 8h455c4 0 7-4 7-8v-80a7 7 0 1 0-15 0v73H15V98h440v232a7 7 0 1 0 15 0V30c0-4-3-7-7-7zM15 38h278v45H15V38zm293 45V38h147v45H308z" />
+                  <path d="M382 52a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM341 52a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM423 52a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM149 226c3 0 5-2 6-5l17-58a8 8 0 0 0-14-4l-13 41-11-20a7 7 0 0 0-13 0l-12 20-13-41a7 7 0 1 0-14 4l17 58a8 8 0 0 0 14 1l14-23 14 23c2 3 5 4 8 4zM206 226a8 8 0 0 0 8-4l14-23 14 23a8 8 0 0 0 14-1l17-58a8 8 0 0 0-14-4l-13 41-12-20a7 7 0 0 0-12 0l-12 20-13-41a7 7 0 1 0-14 4l17 58c1 3 3 5 6 5zM369 154c-4-1-8 1-9 5l-13 41-12-20a7 7 0 0 0-13 0l-12 20-12-41a8 8 0 0 0-14 4l17 58a8 8 0 0 0 14 1l14-23 14 23a8 8 0 0 0 14-1l17-58c1-4-1-8-5-9zM137 269c0-5-4-8-8-8H89c-4 0-7 3-7 8v40c0 4 3 7 7 7h40c4 0 8-3 8-7v-40zm-15 32H97v-25h25v25zM129 331H89c-4 0-7 3-7 8v40c0 4 3 7 7 7h40c4 0 8-3 8-7v-40c0-5-4-8-8-8zm-7 40H97v-25h25v25zM367 281h-30a7 7 0 1 0 0 15h30a7 7 0 1 0 0-15zM307 281H159a7 7 0 1 0 0 15h148a7 7 0 1 0 0-15zM367 351h-30a7 7 0 1 0 0 15h30a7 7 0 1 0 0-15zM307 351H159a7 7 0 1 0 0 15h148a7 7 0 1 0 0-15z" />
+                </g>
+              </svg>
+            </div>
+            <div class="card__content">
+              <h3>Aplicativos</h3>
+              <div class="card__text">
+                <p>Alcance seus clientes com a maior plataforma de aplicativos móveis do mundo. Desde a concepção até a
+                  publicação na Play Store, seu produto é cuidadosamente desenvolvido visando funcionalidade e alta
+                  qualidade.</p>
+              </div>
+              <span class="pre__price">A partir de:</span>
+              <h2>R$ 3999</h2>
+            </div>
+            <div class="btn btn__primary">Contratar</div>
+          </div>
+        </div>
+        <div class="services__card" id="4">
+          <div class="card__wrapper">
+            <div class="card__image">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 470 470">
+                <g fill="#3047ff">
+                  <path d="M463 23H8c-5 0-8 3-8 7v410c0 4 3 8 8 8h455c4 0 7-4 7-8v-80a7 7 0 1 0-15 0v73H15V98h440v232a7 7 0 1 0 15 0V30c0-4-3-7-7-7zM15 38h278v45H15V38zm293 45V38h147v45H308z" />
+                  <path d="M382 52a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM341 52a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM423 52a8 8 0 1 0 0 16 8 8 0 0 0 0-16zM149 226c3 0 5-2 6-5l17-58a8 8 0 0 0-14-4l-13 41-11-20a7 7 0 0 0-13 0l-12 20-13-41a7 7 0 1 0-14 4l17 58a8 8 0 0 0 14 1l14-23 14 23c2 3 5 4 8 4zM206 226a8 8 0 0 0 8-4l14-23 14 23a8 8 0 0 0 14-1l17-58a8 8 0 0 0-14-4l-13 41-12-20a7 7 0 0 0-12 0l-12 20-13-41a7 7 0 1 0-14 4l17 58c1 3 3 5 6 5zM369 154c-4-1-8 1-9 5l-13 41-12-20a7 7 0 0 0-13 0l-12 20-12-41a8 8 0 0 0-14 4l17 58a8 8 0 0 0 14 1l14-23 14 23a8 8 0 0 0 14-1l17-58c1-4-1-8-5-9zM137 269c0-5-4-8-8-8H89c-4 0-7 3-7 8v40c0 4 3 7 7 7h40c4 0 8-3 8-7v-40zm-15 32H97v-25h25v25zM129 331H89c-4 0-7 3-7 8v40c0 4 3 7 7 7h40c4 0 8-3 8-7v-40c0-5-4-8-8-8zm-7 40H97v-25h25v25zM367 281h-30a7 7 0 1 0 0 15h30a7 7 0 1 0 0-15zM307 281H159a7 7 0 1 0 0 15h148a7 7 0 1 0 0-15zM367 351h-30a7 7 0 1 0 0 15h30a7 7 0 1 0 0-15zM307 351H159a7 7 0 1 0 0 15h148a7 7 0 1 0 0-15z" />
+                </g>
+              </svg>
+            </div>
+            <div class="card__content">
+              <h3>Estratégia Digital</h3>
+              <div class="card__text">
+                <p>Usamos tecnologia, inteligência e as melhores ferramentas para planejar, implementar e monitorar
+                  estratégias que aumentam suas vendas e ajudam a conquistar mais clientes para sua empresa.</p>
+              </div>
+              <span class="pre__price">A partir de:</span>
+              <h2>R$ 499</h2>
             </div>
             <div class="btn btn__primary">Contratar</div>
           </div>
@@ -334,7 +402,7 @@
             <img class="email" src="assets/img/mail.svg" alt="">Email
           </button>
         </div>
-        <p>Ou preencha o formulário abaixo que entraremos em contato o mais rápido possível:</p>
+        <p>Ou preencha o formulário abaixo que entraremos em contato o mais breve possível:</p>
         <form action="https://formcarry.com/s/LpZjSnZxlVf" method="POST" accept-charset="UTF-8">
           <div class="input__container">
             <input type="text" id="name" name="Nome" pattern=".*\S.*" required="">
