@@ -45,3 +45,16 @@ function serviceSelector(index) {
 
 //Mostrando Tab Website por padrão
 document.getElementById("defaultOpen").click();
+
+//Scroll into view
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+    menuOpen.classList.remove("active");
+    menuMobile.classList.remove("show");
+  });
+});

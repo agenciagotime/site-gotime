@@ -135,7 +135,8 @@
 .services__wrapper
   display: flex
   flex-direction: column
-  margin: $space*4 0
+  margin: $space*4 auto 
+  max-width: 320px
 
 .services__nav
   display: flex
@@ -234,7 +235,7 @@
   width: 200px
   font-size: 20px
   color: $branco
-  background-color: #1EBEA5
+  background-color: #00E676
 
 .whatsapp
   width: 30px
@@ -393,10 +394,33 @@ input[type=radio]:checked+.radio__button:before
 //  ================================ Media Queries ================================
 @media only screen and (min-width: 650px)
   .btn__primary, .btn__secondary
-    margin: $space*6 0 
+    margin: $space*6 auto
   .contact__buttons
     flex-direction: row
     justify-content: space-evenly
+
+@media only screen and (min-width: 1100px)
+  .nav__wrapper 
+    padding: 48px 0 0
+  .menu
+    display: inherit
+  .menu__toggle
+    display: none
+  .header__content
+    display: flex
+    align-items: center
+    justify-content: space-between
+  .header__text
+    width: 50%
+    margin: $space*10 0 0
+    .btn__primary
+      margin: $space*6 0
+  .header__features
+    display: grid
+    grid-template-columns: 200px 200px
+  .header__image
+    width: 45%
+  
 
   
 
