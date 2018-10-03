@@ -24,27 +24,38 @@ window.onload = function() {
 
 //Função para navegação nas Tabs
 function serviceSelector(index) {
-  let tabcontent = document.getElementsByClassName("services__card");
+  let tabcontent = document.getElementsByClassName("card__wrapper");
+  let descriptiontext = document.getElementsByClassName("description__text");
+  //Escondendo todos os cards
   for (let i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.visibility = "hidden";
-    tabcontent[i].style.maxHeight = "0";
+    tabcontent[i].style.display = "none";
   }
-  document.getElementById(index).style.visibility = "visible";
-  document.getElementById(index).style.maxHeight = "550px";
+  document.getElementById(index).style.display = "inherit";
 
+  //Escondendo todos os textos
+  for (let i = 0; i < descriptiontext.length; i++) {
+    descriptiontext[i].style.display = "none";
+  }
+
+  //Navegando o botão pelos serviços e mostrando o texto de cada um
   if (index == 1) {
     serviceSelection.style.top = "0px";
+    descriptiontext[0].style.display = "inherit";
   } else if (index == 2) {
     serviceSelection.style.top = "52px";
+    descriptiontext[1].style.display = "inherit";
   } else if (index == 3) {
     serviceSelection.style.top = "104px";
+    descriptiontext[2].style.display = "inherit";
   } else if (index == 4) {
     serviceSelection.style.top = "156px";
+    descriptiontext[3].style.display = "inherit";
   }
 }
 
 //Mostrando Tab Website por padrão
 document.getElementById("defaultOpen").click();
+document.getElementById("defaultOpened").style.display = "inherit";
 
 //Scroll into view
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

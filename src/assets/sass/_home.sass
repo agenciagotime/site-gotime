@@ -135,14 +135,33 @@
 .services__wrapper
   display: flex
   flex-direction: column
-  margin: $space*4 auto 
-  max-width: 320px
+  margin: $space*4 auto
 
 .services__nav
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+
+.services__navigation
   display: flex
   position: relative
   flex-direction: column
   margin-bottom: $space*7
+  width: 320px
+
+.services__description
+  position: relative
+  text-align: left
+  max-width: 360px
+  padding-left: $space*3
+  display: none
+
+.services__description:before
+  position: absolute
+  content: "\279C"
+  top: 3px
+  left: 0
+  color: $azul
 
 .btn__flat
   position: relative
@@ -165,22 +184,20 @@
   display: block
 
 .services__card
-  visibility: hidden
-  max-height: 0px
   box-shadow: 0px 5px 30px -8px rgba(0,0,0,0.16)
   border-radius: 10px
-  transition: max-height .3s ease-in-out
+  max-width: 300px
 
 .card__wrapper
-  padding: $space*5 $space*2 $space*2
+  display: none
 
 .card__image
-  margin: 0 auto 24px
-  height: 60px
-  width: 60px
+  margin: $space*4 auto $space*3
+  max-height: 60px
+  max-width: 60px
 
 .card__text
-  padding: $space*2 0 $space*4
+  padding: $space*2 $space*3 $space*3
 
 //  ================================ Últimos Trabalhos ================================
 #cases
@@ -188,11 +205,14 @@
   h2
     padding: $space*2 0
 
+.cases 
+  padding: $space*4 0
+
 .case__background
   position: absolute
   width: 100%
   height: calc(30vw + 140px)
-  margin: $space*4 0 0 -10%
+  margin: 8% 0 0 -10%
 
 .bg
   width: 100%
@@ -200,7 +220,7 @@
   background-color: #FC78AA
 
 .case__text
-  margin: 0 auto
+  margin: $space*5 auto
   max-width: 600px
   text-align: left
 
@@ -208,13 +228,17 @@
   position: relative
   margin-top: $space*18
 
-.case__title
-  padding: $space*3 0 $space*2
+.case__description
+  padding: $space*2 0 $space*6
 
 
 //  ================================ Contato ================================
 #contato 
-  margin: $space*4 0 0
+  margin: $space*8 0 0
+
+.contact__wrapper
+  margin: 0 auto 
+  max-width: 560px
 
 .contact__title
   padding: $space*3 0
@@ -393,7 +417,7 @@ input[type=radio]:checked+.radio__button:before
 
 //  ================================ Media Queries ================================
 @media only screen and (min-width: 650px)
-  .btn__primary, .btn__secondary
+  .btn__primary
     margin: $space*6 auto
   .contact__buttons
     flex-direction: row
@@ -420,6 +444,43 @@ input[type=radio]:checked+.radio__button:before
     grid-template-columns: 200px 200px
   .header__image
     width: 45%
+  .about__content
+    max-width: 800px
+  #servicos 
+    margin: $space*10 0 0
+  .services__wrapper
+    flex-direction: row
+    max-width: 800px
+    justify-content: space-between
+    margin: $space*7 auto 0
+  .services__description
+    display: inherit
+  #cases 
+    margin: $space*12 0 0
+  .cases 
+    padding-bottom: $space*10
+  .case__background
+    width: 45%
+    height: 540px
+    margin-top: 5%
+  .case__content
+    display: flex
+    justify-content: space-between
+  .case__text
+    max-width: 400px
+    padding: 0 0 0 $space*4
+  .btn__secondary
+    margin: 0
+  .right__content
+    right: 0
+    flex-direction: row-reverse
+  .right__align
+    padding: 0 $space*4 0 0
+  .input__container
+    margin: $space*5 auto
+
+  
+  
   
 
   

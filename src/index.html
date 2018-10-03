@@ -196,7 +196,7 @@
     </div>
   </header>
   <section id="sobre">
-    <div class="container">
+    <div class="container about__content">
       <h2 class="about__title">Texto sobre o maior problema dos clientes, mostrando que entendemos do assunto e temos
         capacidade
         pra resolver</h2>
@@ -260,14 +260,27 @@
       <h2 class="services__title">O que fazemos</h2>
       <div class="services__wrapper">
         <nav class="services__nav">
-          <span class="service__selection" id="service__button"></span>
-          <button onclick="serviceSelector(1)" class="btn btn__flat" id="defaultOpen">Websites</button>
-          <button onclick="serviceSelector(2)" class="btn btn__flat">Design</button>
-          <button onclick="serviceSelector(3)" class="btn btn__flat">Aplicativos</button>
-          <button onclick="serviceSelector(4)" class="btn btn__flat">Estratégia</button>
+          <div class="services__navigation">
+            <span class="service__selection" id="service__button"></span>
+            <button onclick="serviceSelector(1)" class="btn btn__flat" id="defaultOpen">Websites</button>
+            <button onclick="serviceSelector(2)" class="btn btn__flat">Design</button>
+            <button onclick="serviceSelector(3)" class="btn btn__flat">Aplicativos</button>
+            <button onclick="serviceSelector(4)" class="btn btn__flat">Estratégia</button>
+          </div>
+          <div class="services__description">
+            <p class="description__text" id="defaultOpened">Texto explicando sobre o serviço de websites, os
+              diferenciais e probelmas que resolvemos, além da estrutura que oferecemos para os clientes como
+              hospedagem, domínio e suporte.</p>
+            <p class="description__text">Texto falando sobre o serviço de Design de sites e sistemas, explicando um
+              pouco sobre UI e UX e diferenciando o nosso trabalho falando da qualidade e do design exclusivo.</p>
+            <p class="description__text">Explicação sobre os aplicativos que desenvolvemos com uma descrição do
+              android, a Play Store e o design e usabilidade que entregamos em todos os nossos produtos.</p>
+            <p class="description__text">Um pouco sobre a consultoria e estratégia digital que oferecemos,
+              posicionamento do negócio, redes sociais, desenvolvimento de serviços digitais, etc e talz.</p>
+          </div>
         </nav>
-        <div class="services__card" id="1">
-          <div class="card__wrapper">
+        <div class="services__card">
+          <div class="card__wrapper" id="1">
             <div class="card__image">
               <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 470 470">
                 <g fill="#3047ff">
@@ -279,17 +292,15 @@
             <div class="card__content">
               <h3>Websites</h3>
               <div class="card__text">
-                <p>Com uma abordagem ágil de desenvolvimento que permite entregas rápidas e de costante colaboração com
-                  o cliente, criamos sites incríveis e sob medida que vão impulsionar seu negócio.</p>
+                <p>Com uma abordagem ágil de desenvolvimento que permite entregas rápidas e de constante colaboração
+                  com o cliente, criamos sites incríveis e sob medida que vão impulsionar seu negócio.</p>
               </div>
               <span class="pre__price">A partir de:</span>
-              <h2>R$ 999</h2>
+              <h1>R$ 999</h1>
             </div>
             <a href="#contato" class="btn btn__primary">Contratar</a>
           </div>
-        </div>
-        <div class="services__card" id="2">
-          <div class="card__wrapper">
+          <div class="card__wrapper" id="2">
             <div class="card__image">
               <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 470 470">
                 <g fill="#3047ff">
@@ -305,13 +316,11 @@
                   empresas com orçamentos limitados a criar um design diferenciado para seus produtos.</p>
               </div>
               <span class="pre__price">A partir de:</span>
-              <h2>R$ 599</h2>
+              <h1>R$ 599</h1>
             </div>
             <a href="#contato" class="btn btn__primary">Contratar</a>
           </div>
-        </div>
-        <div class="services__card" id="3">
-          <div class="card__wrapper">
+          <div class="card__wrapper" id="3">
             <div class="card__image">
               <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 470 470">
                 <g fill="#3047ff">
@@ -324,17 +333,14 @@
               <h3>Aplicativos</h3>
               <div class="card__text">
                 <p>Alcance seus clientes com a maior plataforma de aplicativos móveis do mundo. Desde a concepção até a
-                  publicação na Play Store, seu produto é cuidadosamente desenvolvido visando funcionalidade e alta
-                  qualidade.</p>
+                  publicação na Play Store, desenvolvemos seu produto com a mais alta qualidade.</p>
               </div>
               <span class="pre__price">A partir de:</span>
-              <h2>R$ 3999</h2>
+              <h1>R$ 3999</h1>
             </div>
             <a href="#contato" class="btn btn__primary">Contratar</a>
           </div>
-        </div>
-        <div class="services__card" id="4">
-          <div class="card__wrapper">
+          <div class="card__wrapper" id="4">
             <div class="card__image">
               <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 470 470">
                 <g fill="#3047ff">
@@ -350,7 +356,7 @@
                   estratégias que aumentam suas vendas e ajudam a conquistar mais clientes para sua empresa.</p>
               </div>
               <span class="pre__price">A partir de:</span>
-              <h2>R$ 499</h2>
+              <h1>R$ 499</h1>
             </div>
             <a href="#contato" class="btn btn__primary">Contratar</a>
           </div>
@@ -361,31 +367,41 @@
   <section id="cases">
     <div class="container">
       <h2>Últimos Trabalhos</h2>
-      <div class="case__background">
-        <div class="bg"></div>
-      </div>
-      <div class="case__content">
-        <img src="https://via.placeholder.com/600x400" alt="Imagem de um website desenvolvido pela gotime">
-        <div class="case__text">
-          <h3 class="case__title">Cliente Site</h3>
-          <p class="case__description">Fizemos esse site ultra foda e complexo, nem os engenheiros do Google conseguem
-            programar nesse nível. A missão do site é simplificar a vida de quem quer alugar jatos particulares por um
-            preço alto, mas não acha nenhum absurdo torrar dinheiro por ser rico.</p>
+      <div class="cases">
+        <div class="case__background">
+          <div class="bg"></div>
         </div>
-        <button class="btn btn__secondary">Veja o projeto</button>
-      </div>
-      <div class="case__background">
-        <div class="bg" style="background-color:#599def"></div>
-      </div>
-      <div class="case__content">
-        <img src="https://via.placeholder.com/600x400" alt="Imagem de um website desenvolvido pela gotime">
-        <div class="case__text">
-          <h3 class="case__title">Cliente App</h3>
-          <p class="case__description">Esse aplicativo é revolucionário, fizemos todo o design e código visando um alto
-            nível de conversão de usuários casuais para clientes que pagam mensalidades. Nosso objetivo foi entregar o
-            projeto e manter atualizações sobre as taxas de conversão dos usuários.</p>
+        <div class="case__content">
+          <div class="case__image">
+            <img src="https://via.placeholder.com/600x400" alt="Imagem de um website desenvolvido pela gotime">
+          </div>
+          <div class="case__text">
+            <h3 class="case__title">Cliente Site</h3>
+            <p class="case__description">Fizemos esse site ultra foda e complexo, nem os engenheiros do Google
+              conseguem
+              programar nesse nível. A missão do site é simplificar a vida de quem quer alugar jatos particulares por
+              um
+              preço alto, mas não acha nenhum absurdo torrar dinheiro por ser rico.</p>
+            <a href="case1.html" class="btn btn__secondary">Veja o projeto</a>
+          </div>
         </div>
-        <button class="btn btn__secondary">Veja o projeto</button>
+      </div>
+      <div class="cases">
+        <div class="case__background right__content">
+          <div class="bg" style="background-color:#599def"></div>
+        </div>
+        <div class="case__content right__content">
+          <div class="case__image">
+            <img src="https://via.placeholder.com/600x400" alt="Imagem de um website desenvolvido pela gotime">
+          </div>
+          <div class="case__text right__align">
+            <h3 class="case__title">Cliente App</h3>
+            <p class="case__description">Esse aplicativo é revolucionário, fizemos todo o design e código visando um
+              alto nível de conversão de usuários casuais para clientes que pagam mensalidades. Nosso objetivo foi
+              entregar o projeto e manter atualizações sobre as taxas de conversão dos usuários.</p>
+            <a href="case2.html" class="btn btn__secondary">Veja o projeto</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
