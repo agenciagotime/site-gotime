@@ -22,6 +22,19 @@ window.onload = function() {
   }, 400);
 };
 
+//Função para mostrar o botão voltar ao topo
+window.onscroll = function() {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    document.getElementById("btnScrollToTop").style.opacity = "1";
+  } else {
+    document.getElementById("btnScrollToTop").style.opacity = "0";
+  }
+}
+
 //Função para navegação nas Tabs
 function serviceSelector(index) {
   let tabcontent = document.getElementsByClassName("card__wrapper");

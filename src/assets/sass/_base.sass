@@ -94,7 +94,7 @@ p
   margin: $space*4 auto
 
 .btn__primary:hover
-  background-color: $azul-claro
+  background-color: $azul-escuro
   box-shadow: 0 2px 6px rgba(0,0,0,.05), 0 8px 15px rgba(41,52,204,.1)
   transform: translateY(-2px)
 
@@ -110,3 +110,17 @@ p
 .btn__secondary:hover
   box-shadow: 0 2px 6px rgba(0,0,0,0.15)
   transform: translateY(-2px)
+
+.top 
+  display: none
+  opacity: 0
+  position: fixed
+  bottom: 20px
+  right: 30px
+  height: 40px
+  width: 40px
+  z-index: 5
+  border-radius: 50%
+  cursor: pointer
+  background: $azul url("/assets/img/chevron-up.svg") no-repeat center/30px 70%
+  transition: opacity .6s

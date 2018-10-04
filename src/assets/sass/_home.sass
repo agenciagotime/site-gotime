@@ -15,7 +15,22 @@
 .menu
   justify-content: space-between
   width: $space*50
-  display: none 
+  display: none
+  a 
+    position: relative
+  a::after 
+    content: ''
+    display: block
+    position: absolute
+    width: 0
+    border-bottom: 2px solid $azul
+    bottom: -2px
+    left: 0
+    transition: width .3s ease-in-out
+  a:hover 
+    color: $azul
+  a:hover::after
+    width: 100%
 
 .menu__toggle
   width: $space*5
@@ -260,6 +275,10 @@
   font-size: 20px
   color: $branco
   background-color: #00E676
+  box-shadow: 0 2px 6px rgba(0,0,0,.05), 0 8px 15px rgba(0,230,118,.2)
+  &:hover 
+    box-shadow: 0 4px 8px rgba(0,230,118,.3)
+    transform: translateY(-2px)
 
 .whatsapp
   width: 30px
@@ -275,6 +294,11 @@
   font-size: 20px
   color: $branco
   background-color: $azul
+  box-shadow: 0px 26px 22px -22px rgba(21,57,230,0.55)
+  &:hover 
+    background-color: $azul-escuro
+    box-shadow: 0 2px 6px rgba(0,0,0,.05), 0 8px 15px rgba(41,52,204,.1)
+    transform: translateY(-2px)
 
 .email
   width: 36px
@@ -377,6 +401,10 @@ input[type=radio]:checked+.radio__button:before
 .facebook, .instagram, .github
   fill: $azul-escuro
 
+.facebook:hover, .instagram:hover, .github:hover
+  fill: $azul
+  transform: translateY(-2px)
+
 .copyright
   font-size: 14px
   padding: $space*4 0
@@ -413,6 +441,14 @@ input[type=radio]:checked+.radio__button:before
   to
     opacity: 1
     transform: translate3d(0, 0, 0)
+
+@keyframes pulse
+  0% 
+    box-shadow: 0 0 0 0 rgba(38, 206, 125, 0.8)
+  70% 
+    box-shadow: 0 0 0 20px rgba(38, 206, 125, 0)
+  100% 
+    box-shadow: 0 0 0 0 rgba(38, 206, 125, 0)
 
 
 //  ================================ Media Queries ================================
@@ -478,10 +514,11 @@ input[type=radio]:checked+.radio__button:before
     padding: 0 $space*4 0 0
   .input__container
     margin: $space*5 auto
-
-  
-  
-  
-
-  
-
+  .footer__content
+    display: flex
+    flex-direction: row-reverse
+    justify-content: space-between
+  .footer__social
+    margin: $space*4 0
+  .top 
+    display: block
