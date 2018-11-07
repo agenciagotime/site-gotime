@@ -5,7 +5,7 @@ let menuSocial = document.querySelector(".mobile__social");
 let serviceSelection = document.getElementById("service__button");
 
 //Interatividade do Menu Mobile
-menuOpen.addEventListener("click", function() {
+menuOpen.addEventListener("click", function () {
   menuOpen.classList.toggle("active");
   menuMobile.classList.toggle("show");
   for (let i = 0; i < menuItem.length; i++) {
@@ -15,15 +15,15 @@ menuOpen.addEventListener("click", function() {
 });
 
 //Loader inicial. Após 0.4s o loader desaparece mostrando a página
-window.onload = function() {
-  setTimeout(function() {
+window.onload = function () {
+  setTimeout(function () {
     document.querySelector(".loader").style.visibility = "hidden";
     document.querySelector(".loader").style.opacity = "0";
-  }, 400);
+  }, 300);
 };
 
 //Função para mostrar o botão voltar ao topo
-window.onscroll = function() {
+window.onscroll = function () {
   scrollFunction();
 };
 
@@ -72,7 +72,7 @@ document.getElementById("defaultOpened").style.display = "inherit";
 
 //Scroll into view
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
+  anchor.addEventListener("click", function (e) {
     e.preventDefault();
     document.querySelector(this.getAttribute("href")).scrollIntoView({
       behavior: "smooth",

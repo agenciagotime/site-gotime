@@ -1,17 +1,4 @@
 //  ================================ Navigation ================================
-.nav__wrapper
-  display: flex
-  align-items: center
-  justify-content: space-between
-  padding: $space*3 0 0
-
-.logo
-  width: $space*5
-  height: 100%
-  transition: transform .4s ease-in-out
-  &hover
-    transform: scale(1.1)
-
 .menu
   justify-content: space-between
   width: $space*50
@@ -103,11 +90,6 @@
   transform: translate3d(0, 0vh, 0)
   visibility: visible
   opacity: 1
-
-.social__icon
-  position: relative
-  height: 100%
-
 
 //  ================================ Header ================================
 .header__text 
@@ -221,7 +203,7 @@
     padding: $space*2 0
 
 .cases 
-  padding: $space*4 0
+  padding: $space*4 0 0
 
 .case__background
   position: absolute
@@ -380,35 +362,6 @@ input[type=radio]:checked+.radio__button:before
   border-radius: 50%
   margin-right: $space
 
-
-//  ================================ Footer ================================
-.footer 
-  margin: $space*8 0 0
-  background-color: #f6f6f6
-
-.logo__footer
-  margin: 0 auto
-  padding: $space*5 0 $space*2
-
-.footer__social
-  position: relative
-  display: flex
-  justify-content: space-between
-  width: 180px
-  height: 24px
-  margin: $space*4 auto $space*2
-
-.facebook, .instagram, .github
-  fill: $azul-escuro
-
-.facebook:hover, .instagram:hover, .github:hover
-  fill: $azul
-  transform: translateY(-2px)
-
-.copyright
-  font-size: 14px
-  padding: $space*4 0
-
 //  ================================ Animações ================================
 .menu__item.animate
   .menu__link
@@ -460,8 +413,6 @@ input[type=radio]:checked+.radio__button:before
     justify-content: space-evenly
 
 @media only screen and (min-width: 1100px)
-  .nav__wrapper 
-    padding: 48px 0 0
   .menu
     display: inherit
   .menu__toggle
@@ -514,11 +465,5 @@ input[type=radio]:checked+.radio__button:before
     padding: 0 $space*4 0 0
   .input__container
     margin: $space*5 auto
-  .footer__content
-    display: flex
-    flex-direction: row-reverse
-    justify-content: space-between
-  .footer__social
-    margin: $space*4 0
   .top 
     display: block

@@ -1,0 +1,45 @@
+//  ================================ 404 ================================
+
+.error__title
+  margin-top: $space*8
+  font-size: 120px
+  letter-spacing: $space*2
+  font-weight: bold
+  color: $azul-escuro
+
+.error__subtitle 
+  font-size: 24px
+  padding-bottom: $space*3
+
+
+//  ========================= Sucesso Formulário =========================  
+
+.content__alignment
+  display: flex
+  align-items: center
+  justify-content: space-around
+  flex-direction: column
+  max-width: 700px
+
+.success__image 
+  margin: $space*10 0 0
+  width: calc(20vw + 120px)
+
+.success__text   
+  p 
+    font-size: 24px
+  a 
+    margin: $space*4 auto
+
+@media only screen and (min-width: 1100px)
+  .content__alignment 
+    flex-direction: row
+  .error__title
+    font-size: 180px
+  .success__image 
+    width: 300px
+  .success__text
+    max-width: 300px
+    text-align: left
+    a 
+      margin: $space*4 0
