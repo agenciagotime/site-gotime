@@ -1,364 +1,289 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="A Gotime é uma agência digital especializada em design de interfaces e desenvolvimento de websites, blogs e lojas virtuais."
-    />
-    <title>Novo site FT Construtora</title>
-    <!--
-      Desabilitando zoom e configurando viewport para abaixo do notch no iPhone X
-    -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
-    />
-    <meta name="author" content="Kelvin Santiago, Rodrigo Lima" />
-    <meta name="theme-color" content="#377DE1" />
 
-    <!-- Disable tap highlight on IE -->
-    <meta name="msapplication-tap-highlight" content="no" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="A Gotime é uma agência digital especializada em design de interfaces e desenvolvimento de websites blogs e lojas virtuais." />
+  <title>Novo site FT Construtora</title>
+  <!-- Desabilitando zoom e configurando viewport para abaixo do notch no iPhone X -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <meta name="author" content="Kelvin Santiago, Rodrigo Lima" />
+  <meta name="theme-color" content="#377DE1" />
 
-    <!-- Favicon -->
-    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
-    <!-- iPhone Retina -->
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="assets/img/favicon120.png"
-    />
-    <!-- iPad Retina -->
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="assets/img/favicon167.png"
-    />
-    <!-- iPhone Plus -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/img/favicon.180.png"
-    />
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no" />
 
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="Web Starter Kit" />
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+  <!-- iPhone Retina -->
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon120.png" />
+  <!-- iPad Retina -->
+  <link rel="apple-touch-icon" sizes="167x167" href="assets/img/favicon167.png" />
+  <!-- iPhone Plus -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon.180.png" />
 
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Agência Gotime" />
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="Web Starter Kit" />
 
-    <!-- Color the status bar on mobile devices -->
-    <meta name="theme-color" content="#377DE1" />
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="Agência Gotime" />
 
-    <style>
-      .loader {
-        position: fixed;
-        opacity: 1;
-        visibility: visible;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
-        height: 100%;
-        width: 100%;
-        background: url(assets/img/loader.svg) center no-repeat #fff;
-        background-size: 50px;
-        transition: opacity 0.3s, visibility 0.3s;
-        overflow: hidden;
-        z-index: 10;
-      }
-    </style>
-    <link
-      rel="preload"
-      href="assets/css/cases.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <noscript> <link rel="stylesheet" href="assets/css/cases.css"/></noscript>
+  <!-- Color the status bar on mobile devices -->
+  <meta name="theme-color" content="#377DE1" />
 
-    <link rel="preconnect" href="https://ajax.googleapis.com" crossorigin />
-  </head>
+  <style>
+    .loader {
+      position: fixed;
+      opacity: 1;
+      visibility: visible;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      background: url(assets/img/loader.svg) center no-repeat #fff;
+      background-size: 50px;
+      transition: opacity 0.3s, visibility 0.3s;
+      overflow: hidden;
+      z-index: 10;
+    }
+  </style>
+  <link rel="preload" href="assets/css/cases.css" as="style" onload="this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/cases.css" />
+  </noscript>
+  <link rel="preconnect" href="https://ajax.googleapis.com" crossorigin />
+</head>
 
-  <body>
-    <div class="loader"></div>
+<body>
+  <div class="loader"></div>
 
-    <section class="header">
-      <div class="container">
-        <nav>
-          <div class="nav__wrapper">
-            <a href="/" class="logo" aria-label="Link para o topo da página">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273 301">
-                <defs>
-                  <style>
-                    .a {
-                      fill: rgba(255, 255, 255, 0.6);
-                    }
+  <section class="header">
+    <span class="header__circle"></span>
+    <div class="container">
+      <nav>
+        <div class="nav__wrapper">
+          <a href="/" class="logo" aria-label="Link para o topo da página">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273 301">
+              <defs>
+                <style>
+                  .a {
+                    fill: rgba(255, 255, 255, 0.6);
+                  }
 
-                    .b {
-                      fill: rgba(255, 255, 255, 0.7);
-                    }
+                  .b {
+                    fill: rgba(255, 255, 255, 0.7);
+                  }
 
-                    .c {
-                      fill: #fff;
-                    }
-                  </style>
-                </defs>
-                <path
-                  class="a"
-                  d="M137 0L0 79l37 21 100-57 37 21 37-21-75-43z"
-                />
-                <path class="b" d="M0 222V79l37 21v100l100 58v43z" />
-                <path class="a" d="M236 57L99 136l38 21 136-78z" />
-                <path class="b" d="M99 179v-43l38 21v43z" />
-                <path
-                  class="c"
-                  d="M137 301l136-79V79l-136 78v43l99-57v57l-99 58zM137 43v43l-63 36v57l-37 21V100zM211 43v28l-37 22V64z"
-                />
-                <path
-                  class="b"
-                  d="M137 43v43l24 14 13-7V64zM199 165v14l37 21v-57z"
-                />
-                <path class="a" d="M137 215l-63-36-37 21 100 58 99-58-37-21z" />
-              </svg>
-            </a>
-          </div>
-        </nav>
-        <div class="header__content">
-          <div class="header__text">
-            <h1>FT Construtora</h1>
-            <p>
-              A maior referência local de obras rápidas. Desenvolvemos uma
-              interface simples e intuitiva que aborda a experiência de usuários
-              de uma forma única e eficiente. Nosso projeto abordou todo o
-              produto final, desde o design até o desenvolvimento front-end e
-              back-end.
-            </p>
-          </div>
-          <div class="header__image">
-            <img src="https://via.placeholder.com/540x360" alt="" />
-          </div>
+                  .c {
+                    fill: #fff;
+                  }
+                </style>
+              </defs>
+              <path class="a" d="M137 0L0 79l37 21 100-57 37 21 37-21-75-43z" />
+              <path class="b" d="M0 222V79l37 21v100l100 58v43z" />
+              <path class="a" d="M236 57L99 136l38 21 136-78z" />
+              <path class="b" d="M99 179v-43l38 21v43z" />
+              <path class="c" d="M137 301l136-79V79l-136 78v43l99-57v57l-99 58zM137 43v43l-63 36v57l-37 21V100zM211 43v28l-37 22V64z" />
+              <path class="b" d="M137 43v43l24 14 13-7V64zM199 165v14l37 21v-57z" />
+              <path class="a" d="M137 215l-63-36-37 21 100 58 99-58-37-21z" />
+            </svg>
+          </a>
         </div>
-      </div>
-    </section>
-    <section class="problem">
-      <div class="container">
-        <div class="problem__text">
-          <h5>Problema</h5>
-          <h2>
-            Criar uma experiência digital para apresentar o site e o portfólio
-            da empresa de forma mais simples, funcional e ágil.
-          </h2>
-        </div>
-        <div class="problem__image">
-          <img src="https://via.placeholder.com/900x570" alt="" />
-        </div>
-        <div class="problem__solution">
-          <div class="solution__text">
-            <div class="challenge">
-              <h3>Desafio</h3>
-              <p>
-                Nesse projeto o desafio foi manter a calma e não sentar a
-                porrada em todo mundo, tinha muita coisa pra fazer e o suporte
-                não ajudou muito, foi uma dificuldade muito grande resolver tudo
-                em tempo hábil.
-              </p>
-            </div>
-            <div class="solution">
-              <h3>Solução</h3>
-              <p>
-                Nossa solução foi criar um site mil grau de foda, com todas as
-                características de um site de alto padrão, responsivo, bonito,
-                rápido, com layout bem estruturado e tudo mais que tem de bom no
-                mercado.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="features">
-      <div class="container">
-        <p class="features__text">
-          O novo site da FT Construtora é uma single page com foco em apresentar
-          a empresa a partir de uma breve introdução e abordagem dos serviços
-          realizados. A estratégia foi tornar o portfólio a principal seção do
-          site, para que as obras realizadas e os clientes da empresa demonstrem
-          a alta exigência e qualidade dos serviços prestados.
-        </p>
-        <div class="features__image">
-          <img class="phone__left" src="assets/img/phoneleft.png" alt="" />
-          <img class="phone__center" src="assets/img/phonecenter.png" alt="" />
-          <img class="phone__right" src="assets/img/phoneright.png" alt="" />
-        </div>
-      </div>
-    </section>
-    <section class="product">
-      <div class="product__background"></div>
-      <div class="container">
-        <div class="product__content">
-          <h2>Confira o resultado final</h2>
-          <a href="https://ftconstrutora.com" class="btn btn__secondary"
-            >Visite o site</a
-          >
-          <img src="https://via.placeholder.com/800x500" alt="" />
-        </div>
-      </div>
-    </section>
-    <a href="escolaparque.html" class="full__button">
-      <div href="escolaparque.html" class="btn btn__full">Próximo Projeto</div>
-      <img class="right__arrow" src="assets/img/right.svg" alt="" />
-    </a>
-    <footer class="footer">
-      <div class="container">
-        <div class="logo__wrapper">
-          <div class="logo logo__footer">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              id="Camada_1"
-              viewBox="0 0 273 301.6"
-            >
-              <style>
-                .st0 {
-                  fill: #599def;
-                }
-
-                .st1 {
-                  fill: #377de1;
-                }
-
-                .st2 {
-                  fill: #355293;
-                }
-              </style>
-              <g id="XMLID_1_">
-                <path
-                  id="XMLID_11_"
-                  class="st0"
-                  d="M136.5.7L0 79.5 37.2 101l99.3-57.3 37.2 21.5 37.2-21.5-74.4-43z"
-                ></path>
-                <path
-                  id="XMLID_10_"
-                  class="st1"
-                  d="M0 222.8V79.5L37.2 101v100.3l99.3 57.3v43L0 222.8z"
-                ></path>
-                <path
-                  id="XMLID_9_"
-                  class="st0"
-                  d="M235.8 58L99.3 136.8l37.2 21.5L273 79.5 235.8 58z"
-                ></path>
-                <path
-                  id="XMLID_8_"
-                  class="st1"
-                  d="M99.3 179.8v-43l37.2 21.5v43l-37.2-21.5z"
-                ></path>
-                <path
-                  id="XMLID_7_"
-                  class="st2"
-                  d="M136.5 301.6L273 222.8V79.5l-136.5 78.8v43l99.3-57.3v57.3l-99.3 57.3v43z"
-                ></path>
-                <path
-                  id="XMLID_6_"
-                  class="st2"
-                  d="M136.5 43.7v43l-62.1 35.8v57.3l-37.2 21.5V101l99.3-57.3z"
-                ></path>
-                <path
-                  id="XMLID_5_"
-                  class="st2"
-                  d="M210.9 43.7v28.7l-37.2 21.5V65.2l37.2-21.5z"
-                ></path>
-                <path
-                  id="XMLID_4_"
-                  class="st1"
-                  d="M136.5 43.7v43l24.8 14.3 12.4-7.2V65.2l-37.2-21.5z"
-                ></path>
-                <path
-                  id="XMLID_3_"
-                  class="st1"
-                  d="M198.6 165.5v14.3l37.2 21.5V144l-37.2 21.5z"
-                ></path>
-                <path
-                  id="XMLID_2_"
-                  class="st0"
-                  d="M136.5 215.6l-62.1-35.8-37.2 21.5 99.3 57.3 99.3-57.3-37.2-21.5-62.1 35.8z"
-                ></path>
+      </nav>
+      <div class="header__content">
+        <div class="header__text">
+          <div class="logo__ft">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Camada_1"
+              x="0px" y="0px" viewBox="0 0 786 203" enable-background="new 0 0 786 203" xml:space="preserve">
+              <g id="XMLID_6_">
+                <g id="XMLID_1_">
+                  <path id="XMLID_2_" fill="#fff" d="M254.29,56.21h-248c-0.55,0-1-0.45-1-1v-48c0-0.55,0.45-1,1-1h248c0.55,0,1,0.45,1,1v48    C255.29,55.76,254.84,56.21,254.29,56.21z"></path>
+                  <path id="XMLID_3_" fill="#fff" d="M204.29,126.21h-98c-0.55,0-1-0.45-1-1v-48c0-0.55,0.45-1,1-1h98c0.55,0,1,0.45,1,1v48    C205.29,125.76,204.84,126.21,204.29,126.21z"></path>
+                  <path id="XMLID_4_" fill="#fff" d="M154.29,196.21h-48c-0.55,0-1-0.45-1-1v-48c0-0.55,0.45-1,1-1h48c0.55,0,1,0.45,1,1v48    C155.29,195.76,154.84,196.21,154.29,196.21z"></path>
+                </g>
+                <g id="XMLID_7_">
+                  <path id="XMLID_8_" fill="#fff" d="M279.5,84.76v12.21h14.99c1.2,0,2.21,0.38,3.02,1.15c0.81,0.76,1.21,1.75,1.21,2.95    c0,1.02-0.41,1.92-1.21,2.71c-0.81,0.79-1.82,1.18-3.02,1.18H279.5v16.17c0,1.2-0.43,2.21-1.28,3.02    c-0.86,0.81-1.86,1.21-3.02,1.21c-1.3,0-2.35-0.39-3.16-1.18c-0.81-0.79-1.21-1.8-1.21-3.05V81.02c0-1.2,0.4-2.21,1.21-3.02    c0.81-0.81,1.81-1.21,3.02-1.21h22.56c1.2,0,2.21,0.38,3.02,1.15c0.81,0.76,1.21,1.75,1.21,2.95c0,1.02-0.41,1.92-1.21,2.71    c-0.81,0.79-1.82,1.18-3.02,1.18H279.5z"></path>
+                  <path id="XMLID_10_" fill="#fff" d="M345.85,77.89c0.79,0.74,1.18,1.71,1.18,2.92c0,1.2-0.39,2.16-1.18,2.88    c-0.79,0.72-1.8,1.08-3.05,1.08H331.9v36.37c0,1.2-0.44,2.21-1.32,3.02c-0.88,0.81-1.97,1.21-3.26,1.21s-2.36-0.4-3.19-1.21    c-0.83-0.81-1.25-1.82-1.25-3.02V84.76h-10.9c-1.25,0-2.27-0.37-3.05-1.11c-0.79-0.74-1.18-1.71-1.18-2.92    c0-1.16,0.4-2.1,1.22-2.85c0.81-0.74,1.81-1.11,3.02-1.11h30.81C344.04,76.78,345.06,77.15,345.85,77.89z"></path>
+                  <path id="XMLID_12_" fill="#fff" d="M306.98,152.08c0,0.97-0.35,1.92-1.04,2.85c-0.74,0.97-1.69,1.46-2.85,1.46    c-0.79,0-1.57-0.21-2.36-0.63c-2.27-1.06-4.72-1.6-7.36-1.6c-3.24,0-6.06,0.68-8.47,2.05c-2.41,1.37-4.26,3.29-5.55,5.76    c-1.3,2.48-1.94,5.31-1.94,8.5c0,5.46,1.47,9.6,4.41,12.42c2.94,2.82,6.79,4.23,11.56,4.23c2.82,0,5.27-0.53,7.36-1.6    c0.83-0.37,1.57-0.56,2.22-0.56c1.2,0,2.22,0.51,3.05,1.53c0.69,0.88,1.04,1.83,1.04,2.85c0,0.74-0.19,1.41-0.56,2.01    c-0.37,0.6-0.9,1.06-1.6,1.39c-3.61,1.8-7.45,2.71-11.52,2.71c-4.54,0-8.7-0.96-12.49-2.88c-3.79-1.92-6.83-4.75-9.09-8.5    c-2.27-3.75-3.4-8.28-3.4-13.6c0-4.72,1.08-8.95,3.23-12.7s5.12-6.67,8.92-8.78c3.79-2.1,8.07-3.16,12.84-3.16    c4.12,0,7.93,0.9,11.45,2.71C306.26,149.29,306.98,150.47,306.98,152.08z"></path>
+                  <path id="XMLID_14_" fill="#fff" d="M355.98,183.07c-2.04,3.82-4.85,6.84-8.43,9.06c-3.59,2.22-7.62,3.33-12.11,3.33    c-4.49,0-8.53-1.11-12.11-3.33c-3.59-2.22-6.38-5.24-8.4-9.06s-3.02-8.02-3.02-12.6c0-4.58,1.01-8.78,3.02-12.6    c2.01-3.82,4.81-6.84,8.4-9.06c3.58-2.22,7.62-3.33,12.11-3.33c4.49,0,8.52,1.11,12.11,3.33c3.58,2.22,6.4,5.24,8.43,9.06    c2.04,3.82,3.05,8.02,3.05,12.6C359.03,175.06,358.02,179.25,355.98,183.07z M348.14,162.04c-1.25-2.52-2.98-4.52-5.21-6    c-2.22-1.48-4.72-2.22-7.5-2.22c-2.82,0-5.33,0.73-7.53,2.19c-2.2,1.46-3.91,3.46-5.14,6c-1.23,2.54-1.84,5.37-1.84,8.47    c0,3.1,0.61,5.92,1.84,8.47c1.23,2.54,2.94,4.55,5.14,6c2.2,1.46,4.71,2.19,7.53,2.19c2.78,0,5.27-0.74,7.5-2.22    c2.22-1.48,3.96-3.48,5.21-6c1.25-2.52,1.87-5.33,1.87-8.43C350.01,167.38,349.39,164.57,348.14,162.04z"></path>
+                  <path id="XMLID_17_" fill="#fff" d="M406.57,147.3c0.69,0.74,1.04,1.67,1.04,2.78v40.46c0,1.2-0.41,2.21-1.21,3.02    c-0.81,0.81-1.82,1.21-3.02,1.21c-0.65,0-1.28-0.1-1.91-0.31c-0.62-0.21-1.08-0.5-1.35-0.87l-25.47-32.34v29.63    c0,1.11-0.36,2.04-1.08,2.78c-0.72,0.74-1.66,1.11-2.81,1.11c-1.11,0-2.01-0.37-2.71-1.11c-0.69-0.74-1.04-1.67-1.04-2.78v-40.46    c0-1.2,0.4-2.21,1.21-3.02c0.81-0.81,1.82-1.21,3.02-1.21c0.69,0,1.38,0.14,2.05,0.42c0.67,0.28,1.17,0.65,1.49,1.11l25.26,32.2    v-29.84c0-1.11,0.36-2.04,1.08-2.78c0.72-0.74,1.63-1.11,2.74-1.11S405.88,146.56,406.57,147.3z"></path>
+                  <path id="XMLID_19_" fill="#fff" d="M424.76,194.21c-2.59-0.83-5.02-2.24-7.29-4.23c-1.25-1.11-1.87-2.34-1.87-3.68    c0-1.06,0.39-2,1.18-2.81c0.79-0.81,1.74-1.21,2.85-1.21c0.88,0,1.67,0.28,2.36,0.83c1.85,1.53,3.65,2.64,5.41,3.33    c1.76,0.69,3.84,1.04,6.25,1.04c2.59,0,4.82-0.58,6.7-1.74c1.87-1.16,2.81-2.59,2.81-4.3c0-2.08-0.93-3.71-2.78-4.89    c-1.85-1.18-4.79-2.07-8.81-2.67c-10.13-1.48-15.2-6.2-15.2-14.16c0-2.92,0.76-5.45,2.29-7.6c1.53-2.15,3.61-3.79,6.25-4.93    c2.64-1.13,5.58-1.7,8.81-1.7c2.92,0,5.66,0.44,8.22,1.32c2.57,0.88,4.71,2.04,6.42,3.47c1.34,1.06,2.01,2.29,2.01,3.68    c0,1.07-0.39,2-1.18,2.81c-0.79,0.81-1.71,1.21-2.78,1.21c-0.69,0-1.32-0.21-1.87-0.62c-1.2-0.97-2.88-1.86-5.03-2.67    c-2.15-0.81-4.08-1.21-5.8-1.21c-2.91,0-5.17,0.54-6.77,1.63c-1.6,1.09-2.39,2.51-2.39,4.27c0,1.99,0.82,3.49,2.46,4.51    c1.64,1.02,4.22,1.85,7.74,2.5c3.98,0.69,7.16,1.59,9.54,2.67c2.38,1.09,4.17,2.57,5.38,4.44c1.2,1.87,1.8,4.36,1.8,7.46    c0,2.91-0.82,5.47-2.46,7.67c-1.64,2.2-3.83,3.89-6.56,5.07c-2.73,1.18-5.67,1.77-8.81,1.77    C430.31,195.46,427.35,195.04,424.76,194.21z"></path>
+                  <path id="XMLID_21_" fill="#fff" d="M494.43,147.3c0.79,0.74,1.18,1.71,1.18,2.92s-0.39,2.16-1.18,2.88    c-0.79,0.72-1.8,1.08-3.05,1.08h-10.9v36.37c0,1.2-0.44,2.21-1.32,3.02c-0.88,0.81-1.97,1.21-3.26,1.21c-1.3,0-2.36-0.4-3.19-1.21    c-0.83-0.81-1.25-1.82-1.25-3.02v-36.37h-10.9c-1.25,0-2.27-0.37-3.05-1.11c-0.79-0.74-1.18-1.71-1.18-2.91    c0-1.16,0.4-2.11,1.21-2.85c0.81-0.74,1.82-1.11,3.02-1.11h30.81C492.63,146.19,493.65,146.56,494.43,147.3z"></path>
+                  <path id="XMLID_23_" fill="#fff" d="M542.43,189.42c0.35,0.6,0.52,1.23,0.52,1.87c0,0.83-0.28,1.6-0.83,2.29    c-0.69,0.83-1.76,1.25-3.19,1.25c-1.11,0-2.13-0.25-3.05-0.76c-3.33-1.9-5-5.76-5-11.59c0-1.67-0.54-2.98-1.63-3.96    c-1.09-0.97-2.65-1.46-4.68-1.46h-12.98v13.46c0,1.25-0.34,2.27-1.01,3.05c-0.67,0.79-1.56,1.18-2.67,1.18    c-1.34,0-2.51-0.4-3.5-1.21c-1-0.81-1.49-1.82-1.49-3.02v-40.11c0-1.2,0.4-2.21,1.21-3.02c0.81-0.81,1.82-1.21,3.02-1.21h19.99    c2.41,0,4.67,0.65,6.8,1.94c2.13,1.3,3.83,3.08,5.1,5.34c1.27,2.27,1.91,4.81,1.91,7.63c0,2.31-0.62,4.57-1.87,6.77    c-1.25,2.2-2.87,3.95-4.86,5.24c2.91,2.04,4.51,4.77,4.79,8.19c0.14,0.74,0.21,1.46,0.21,2.15c0.18,1.43,0.37,2.46,0.56,3.09    c0.18,0.63,0.6,1.1,1.25,1.42C541.6,188.34,542.08,188.82,542.43,189.42z M529.21,168.74c0.79-0.79,1.43-1.84,1.94-3.16    c0.51-1.32,0.76-2.74,0.76-4.27c0-1.29-0.25-2.49-0.76-3.57c-0.51-1.09-1.16-1.95-1.94-2.6c-0.79-0.65-1.6-0.97-2.43-0.97h-15.2    v15.75h15.2C527.61,169.92,528.42,169.53,529.21,168.74z"></path>
+                  <path id="XMLID_26_" fill="#fff" d="M587.64,147.3c0.74,0.79,1.11,1.8,1.11,3.05v25.12c0,3.84-0.81,7.24-2.43,10.2    c-1.62,2.96-3.89,5.27-6.8,6.94c-2.92,1.67-6.25,2.5-9.99,2.5s-7.09-0.83-10.03-2.5c-2.94-1.67-5.22-3.98-6.84-6.94    c-1.62-2.96-2.43-6.36-2.43-10.2v-25.12c0-1.2,0.42-2.21,1.25-3.02c0.83-0.81,1.9-1.21,3.19-1.21c1.11,0,2.08,0.41,2.92,1.21    c0.83,0.81,1.25,1.82,1.25,3.02v25.12c0,2.22,0.49,4.2,1.46,5.93c0.97,1.74,2.28,3.07,3.92,3.99c1.64,0.93,3.41,1.39,5.31,1.39    c1.99,0,3.85-0.46,5.59-1.39c1.74-0.92,3.12-2.26,4.16-3.99c1.04-1.73,1.56-3.71,1.56-5.93v-25.12c0-1.25,0.35-2.27,1.04-3.05    c0.69-0.79,1.64-1.18,2.85-1.18C585.93,146.12,586.9,146.51,587.64,147.3z"></path>
+                  <path id="XMLID_28_" fill="#fff" d="M634.14,147.3c0.79,0.74,1.18,1.71,1.18,2.92s-0.39,2.16-1.18,2.88    c-0.79,0.72-1.8,1.08-3.05,1.08h-10.9v36.37c0,1.2-0.44,2.21-1.32,3.02c-0.88,0.81-1.97,1.21-3.26,1.21c-1.3,0-2.36-0.4-3.19-1.21    c-0.83-0.81-1.25-1.82-1.25-3.02v-36.37h-10.9c-1.25,0-2.27-0.37-3.05-1.11c-0.79-0.74-1.18-1.71-1.18-2.91    c0-1.16,0.4-2.11,1.21-2.85c0.81-0.74,1.82-1.11,3.02-1.11h30.81C632.33,146.19,633.35,146.56,634.14,147.3z"></path>
+                  <path id="XMLID_30_" fill="#fff" d="M682.86,183.07c-2.04,3.82-4.85,6.84-8.43,9.06c-3.59,2.22-7.62,3.33-12.11,3.33    c-4.49,0-8.53-1.11-12.11-3.33c-3.59-2.22-6.38-5.24-8.4-9.06s-3.02-8.02-3.02-12.6c0-4.58,1.01-8.78,3.02-12.6    c2.01-3.82,4.81-6.84,8.4-9.06c3.58-2.22,7.62-3.33,12.11-3.33c4.49,0,8.52,1.11,12.11,3.33c3.58,2.22,6.4,5.24,8.43,9.06    c2.04,3.82,3.05,8.02,3.05,12.6C685.91,175.06,684.9,179.25,682.86,183.07z M675.02,162.04c-1.25-2.52-2.98-4.52-5.21-6    c-2.22-1.48-4.72-2.22-7.5-2.22c-2.82,0-5.33,0.73-7.53,2.19c-2.2,1.46-3.91,3.46-5.14,6c-1.23,2.54-1.84,5.37-1.84,8.47    c0,3.1,0.61,5.92,1.84,8.47c1.23,2.54,2.94,4.55,5.14,6c2.2,1.46,4.71,2.19,7.53,2.19c2.78,0,5.27-0.74,7.5-2.22    c2.22-1.48,3.96-3.48,5.21-6c1.25-2.52,1.87-5.33,1.87-8.43C676.89,167.38,676.27,164.57,675.02,162.04z"></path>
+                  <path id="XMLID_33_" fill="#fff" d="M733.42,189.42c0.35,0.6,0.52,1.23,0.52,1.87c0,0.83-0.28,1.6-0.83,2.29    c-0.69,0.83-1.76,1.25-3.19,1.25c-1.11,0-2.13-0.25-3.05-0.76c-3.33-1.9-5-5.76-5-11.59c0-1.67-0.54-2.98-1.63-3.96    c-1.09-0.97-2.65-1.46-4.68-1.46h-12.98v13.46c0,1.25-0.34,2.27-1.01,3.05c-0.67,0.79-1.56,1.18-2.67,1.18    c-1.34,0-2.51-0.4-3.5-1.21c-1-0.81-1.49-1.82-1.49-3.02v-40.11c0-1.2,0.4-2.21,1.21-3.02c0.81-0.81,1.82-1.21,3.02-1.21h19.99    c2.41,0,4.67,0.65,6.8,1.94c2.13,1.3,3.83,3.08,5.1,5.34c1.27,2.27,1.91,4.81,1.91,7.63c0,2.31-0.62,4.57-1.87,6.77    c-1.25,2.2-2.87,3.95-4.86,5.24c2.91,2.04,4.51,4.77,4.79,8.19c0.14,0.74,0.21,1.46,0.21,2.15c0.18,1.43,0.37,2.46,0.56,3.09    c0.18,0.63,0.6,1.1,1.25,1.42C732.6,188.34,733.07,188.82,733.42,189.42z M720.2,168.74c0.79-0.79,1.43-1.84,1.94-3.16    c0.51-1.32,0.76-2.74,0.76-4.27c0-1.29-0.25-2.49-0.76-3.57c-0.51-1.09-1.16-1.95-1.94-2.6c-0.79-0.65-1.6-0.97-2.43-0.97h-15.2    v15.75h15.2C718.6,169.92,719.41,169.53,720.2,168.74z"></path>
+                  <path id="XMLID_36_" fill="#fff" d="M780.02,191.02c0,1.2-0.39,2.19-1.18,2.95c-0.79,0.76-1.69,1.14-2.71,1.14    c-0.83,0-1.59-0.25-2.26-0.76c-0.67-0.51-1.19-1.2-1.56-2.08l-3.61-8.4h-20.68l-3.61,8.47c-0.32,0.88-0.82,1.56-1.49,2.05    c-0.67,0.49-1.4,0.73-2.19,0.73c-1.2,0-2.12-0.32-2.74-0.97s-0.94-1.53-0.94-2.64c0-0.42,0.07-0.86,0.21-1.32l17.28-41.5    c0.37-0.92,0.92-1.64,1.67-2.15c0.74-0.51,1.57-0.72,2.5-0.63c0.83,0,1.61,0.24,2.33,0.73c0.72,0.49,1.24,1.17,1.56,2.05    l17.07,40.67C779.91,189.96,780.02,190.51,780.02,191.02z M751.43,175.89h13.88l-7.01-16.24L751.43,175.89z"></path>
+                </g>
               </g>
             </svg>
           </div>
+          <p>
+            A FT Construtora é referência em obras rápidas de alto padrão.
+            Desenvolvemos uma interface simples e intuitiva que aborda a
+            experiência de usuários de uma forma única e eficiente. Nosso
+            projeto abordou todo o produto final, desde o design até o
+            desenvolvimento front-end e back-end.
+          </p>
         </div>
-        <div class="footer__content">
-          <div class="footer__social">
-            <a href="https://www.facebook.com/agenciagotime" target="_blank">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                class="social__icon facebook"
-                viewBox="0 0 24 23"
-              >
-                <path
-                  fill="inherit"
-                  d="M16.5,0 L7.4,0 C3.8,0 0.9,2.9 0.9,6.5 L0.9,15.6 C0.9,19.2 3.8,22.1 7.4,22.1 L16.5,22.1 C20.1,22.1 23,19.2 23,15.6 L23,6.5 C23,2.9 20.1,0 16.5,0 Z M21,15.5 C21,18 19,20 16.5,20 L14,20 L14,12 L17,12 L17,10 L14,10 L14,9 C14,7.9 14.9,7 16,7 L18,7 L18,5 L16,5 C13.8,5.1 12,6.8 12,9 L12,10 L10,10 L10,12 L12,12 L12,20 L7.5,20 C5,20 3,18 3,15.5 L3,6.4 C3,3.9 5,1.9 7.5,1.9 L16.6,1.9 C19.1,1.9 21.1,3.9 21.1,6.4 L21.1,15.5 L21,15.5 Z"
-                ></path></svg
-            ></a>
-            <a href="https://www.instagram.com/agenciagotime/" target="_blank">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                class="social__icon instagram"
-                viewBox="0 0 22 22"
-              >
-                <path
-                  fill="inherit"
-                  d="M2,6.45187444 C2,3.98999605 3.98785555,2 6.45187444,2 L15.5481256,2 C18.010004,2 20,3.98785555 20,6.45187444 L20,15.5481256 C20,18.010004 18.0121444,20 15.5481256,20 L6.45187444,20 C3.98999605,20 2,18.0121444 2,15.5481256 L2,6.45187444 Z M0,6.45187444 L0,15.5481256 C0,19.1171961 2.8859081,22 6.45187444,22 L15.5481256,22 C19.1171961,22 22,19.1140919 22,15.5481256 L22,6.45187444 C22,2.88280393 19.1140919,0 15.5481256,0 L6.45187444,0 C2.88280393,0 0,2.8859081 0,6.45187444 Z"
-                  fill-rule="evenodd"
-                ></path>
-                <path
-                  fill="inherit"
-                  d="M11,6.7 C13.3748244,6.7 15.3,8.62517558 15.3,11 C15.3,13.3748244 13.3748244,15.3 11,15.3 C8.62517558,15.3 6.7,13.3748244 6.7,11 C6.7,8.62517558 8.62517558,6.7 11,6.7 L11,6.7 Z M11,5 C7.6862915,5 5,7.6862915 5,11 C5,14.3137085 7.6862915,17 11,17 C14.3137085,17 17,14.3137085 17,11 C17,7.6862915 14.3137085,5 11,5 Z"
-                  fill-rule="evenodd"
-                ></path></svg
-            ></a>
-            <a href="https://github.com/agenciagotime" target="_blank">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                version="1.1"
-                class="social__icon github"
-                viewBox="0 0 22 23"
-              >
-                <path
-                  fill="#inherit"
-                  d="M3.7,3.13 L5.31,4.13 L6,4.62 L6.77,4.37 C9.52406037,3.48550991 12.4859396,3.48550991 15.24,4.37 L16.01,4.62 L16.69,4.18 L18.3,3.18 L18.3,5.92 L18.82,6.42 C19.7062938,7.2067388 20.2395262,8.31643859 20.3,9.5 C20.3,11.59 18.3,13.6 15.3,14.61 C14.5498118,14.8610534 13.9610534,15.4498118 13.71,16.2 C13.4605039,16.918827 13.5681931,17.7134992 14,18.34 C14.1758517,18.5885364 14.270195,18.8855429 14.27,19.19 L14.27,20.26 L7.7,20.26 L7.7,19.19 C7.70852076,18.8822417 7.81345557,18.5849264 8,18.34 C8.43856756,17.7168713 8.55371762,16.9219644 8.31,16.2 C8.06101579,15.4520453 7.476369,14.8636982 6.73,14.61 C3.73,13.61 1.73,11.61 1.73,9.5 C1.78272511,8.32091623 2.30482985,7.21189374 3.18,6.42 L3.7,5.92 L3.7,3.13 L3.7,3.13 Z M19.41,0.5 C19.295815,0.501105776 19.184497,0.535892672 19.09,0.6 L15.77,2.75 C12.6685484,1.75043243 9.33145162,1.75043243 6.23,2.75 L2.91,0.59 C2.81439909,0.529420923 2.70316309,0.498135799 2.59,0.5 C2.264152,0.5 2,0.764151998 2,1.09 L2,5.2 C0.771136618,6.29787584 0.0478983557,7.8528381 0,9.5 C0,12.5 2.51,15 6.15,16.22 C6.37618683,16.2921516 6.55644235,16.4646104 6.63851832,16.687388 C6.72059429,16.9101656 6.69531211,17.1583488 6.57,17.36 C6.19512112,17.8962763 5.99595672,18.5356988 6,19.19 L6,22 L16,22 L16,19.19 C16.0019759,18.5391076 15.802907,17.9034841 15.43,17.37 C15.3046879,17.1683488 15.2794057,16.9201656 15.3614817,16.697388 C15.4435576,16.4746104 15.6238132,16.3021516 15.85,16.23 C19.49,15 22,12.45 22,9.5 C21.9521016,7.8528381 21.2288634,6.29787584 20,5.2 L20,1.09 C20,0.933522271 19.9378395,0.783453462 19.827193,0.672806999 C19.7165465,0.562160536 19.5664777,0.5 19.41,0.5 L19.41,0.5 Z"
-                ></path></svg
-            ></a>
-          </div>
-          <p class="copyright">2018 © GOTIME • AGÊNCIA DIGITAL</p>
+        <div class="header__image">
+          <img src="assets/img/ftheader.jpg" alt="" />
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
+  <section class="problem">
+    <div class="container">
+      <div class="problem__text">
+        <h5>Problema</h5>
+        <h2>
+          Como podemos criar uma experiência digital para apresentar a empresa
+          e seu portfólio de forma mais simples, funcional e sem perder a
+          agilidade.
+        </h2>
+      </div>
+      <div class="problem__image">
+        <img src="assets/img/ftfull.jpg" alt="" />
+      </div>
+      <div class="problem__solution">
+        <div class="solution__text">
+          <div class="challenge">
+            <h3>Desafio</h3>
+            <p>
+              O principal desafio do projeto foi desenvolver uma interface
+              simples e intuitiva para exibir o portfólio da empresa com foco
+              na plataforma mobile, já que a maioria dos acessos ao site são
+              realizados a partir de dispositivos móveis.
+            </p>
+          </div>
+          <div class="solution">
+            <h3>Solução</h3>
+            <p>
+              Nossa solução foi criar um site priorizando a versão mobile,
+              isso significou reduzir o tamanho do site para melhorar o
+              desempenho da página e a velocidade de carregamento,
+              simplificando e compactando as imagens, gráficos e animações.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container">
+      <p class="features__text">
+        O novo site da FT Construtora é simples e com um design limpo, com
+        ênfase na apresentação da empresa a partir de uma breve introdução e
+        um showcase dos serviços realizados. A estratégia foi tornar o
+        portfólio a principal seção do site, para que as obras realizadas e os
+        clientes da empresa demonstrem a alta exigência e qualidade dos
+        serviços prestados.
+      </p>
+      <div class="features__image">
+        <img class="phone__left" src="assets/img/phoneleft.png" alt="" />
+        <img class="phone__center" src="assets/img/phonecenter.png" alt="" />
+        <img class="phone__right" src="assets/img/phoneright.png" alt="" />
+      </div>
+    </div>
+  </section>
+  <section class="product">
+    <div class="product__background"></div>
+    <div class="container">
+      <div class="product__content">
+        <h2>Confira o resultado final</h2>
+        <a href="https://ftconstrutora.com" target="_blank" class="btn btn__secondary">
+          Visite o site
+        </a>
+        <div class="row__mockups">
+          <img src="assets/img/mockupft.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <a href="escolaparque.html" class="full__button">
+    <div href="escolaparque.html" class="btn btn__full">Próximo Projeto</div>
+    <img class="right__arrow" src="assets/img/right.svg" alt="" />
+  </a>
+  <footer class="footer">
+    <div class="container">
+      <div class="logo__wrapper">
+        <div class="logo logo__footer">
+          <svg xmlns="http://www.w3.org/2000/svg" id="Camada_1" viewBox="0 0 273 301.6">
+            <style>
+              .st0 {
+                fill: #599def;
+              }
 
-    <!-- Script Loader -->
-    <script>
-      window.onload = function() {
-        setTimeout(function() {
-          document.querySelector(".loader").style.visibility = "hidden";
-          document.querySelector(".loader").style.opacity = "0";
-        }, 300);
-      };
-    </script>
+              .st1 {
+                fill: #377de1;
+              }
 
-    <!-- Fonte -->
-    <script
-      rel="preconnect"
-      rel="dns-prefetch"
-      src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"
-    ></script>
-    <script>
-      WebFont.load({
-        google: { families: ["Dosis"] }
-      });
-    </script>
-  </body>
+              .st2 {
+                fill: #355293;
+              }
+            </style>
+            <g id="XMLID_1_">
+              <path id="XMLID_11_" class="st0" d="M136.5.7L0 79.5 37.2 101l99.3-57.3 37.2 21.5 37.2-21.5-74.4-43z"></path>
+              <path id="XMLID_10_" class="st1" d="M0 222.8V79.5L37.2 101v100.3l99.3 57.3v43L0 222.8z"></path>
+              <path id="XMLID_9_" class="st0" d="M235.8 58L99.3 136.8l37.2 21.5L273 79.5 235.8 58z"></path>
+              <path id="XMLID_8_" class="st1" d="M99.3 179.8v-43l37.2 21.5v43l-37.2-21.5z"></path>
+              <path id="XMLID_7_" class="st2" d="M136.5 301.6L273 222.8V79.5l-136.5 78.8v43l99.3-57.3v57.3l-99.3 57.3v43z"></path>
+              <path id="XMLID_6_" class="st2" d="M136.5 43.7v43l-62.1 35.8v57.3l-37.2 21.5V101l99.3-57.3z"></path>
+              <path id="XMLID_5_" class="st2" d="M210.9 43.7v28.7l-37.2 21.5V65.2l37.2-21.5z"></path>
+              <path id="XMLID_4_" class="st1" d="M136.5 43.7v43l24.8 14.3 12.4-7.2V65.2l-37.2-21.5z"></path>
+              <path id="XMLID_3_" class="st1" d="M198.6 165.5v14.3l37.2 21.5V144l-37.2 21.5z"></path>
+              <path id="XMLID_2_" class="st0" d="M136.5 215.6l-62.1-35.8-37.2 21.5 99.3 57.3 99.3-57.3-37.2-21.5-62.1 35.8z"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="footer__content">
+        <div class="footer__social">
+          <a href="https://www.facebook.com/agenciagotime" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="social__icon facebook" viewBox="0 0 24 23">
+              <path fill="inherit" d="M16.5,0 L7.4,0 C3.8,0 0.9,2.9 0.9,6.5 L0.9,15.6 C0.9,19.2 3.8,22.1 7.4,22.1 L16.5,22.1 C20.1,22.1 23,19.2 23,15.6 L23,6.5 C23,2.9 20.1,0 16.5,0 Z M21,15.5 C21,18 19,20 16.5,20 L14,20 L14,12 L17,12 L17,10 L14,10 L14,9 C14,7.9 14.9,7 16,7 L18,7 L18,5 L16,5 C13.8,5.1 12,6.8 12,9 L12,10 L10,10 L10,12 L12,12 L12,20 L7.5,20 C5,20 3,18 3,15.5 L3,6.4 C3,3.9 5,1.9 7.5,1.9 L16.6,1.9 C19.1,1.9 21.1,3.9 21.1,6.4 L21.1,15.5 L21,15.5 Z"></path>
+            </svg></a>
+          <a href="https://www.instagram.com/agenciagotime/" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="social__icon instagram" viewBox="0 0 22 22">
+              <path fill="inherit" d="M2,6.45187444 C2,3.98999605 3.98785555,2 6.45187444,2 L15.5481256,2 C18.010004,2 20,3.98785555 20,6.45187444 L20,15.5481256 C20,18.010004 18.0121444,20 15.5481256,20 L6.45187444,20 C3.98999605,20 2,18.0121444 2,15.5481256 L2,6.45187444 Z M0,6.45187444 L0,15.5481256 C0,19.1171961 2.8859081,22 6.45187444,22 L15.5481256,22 C19.1171961,22 22,19.1140919 22,15.5481256 L22,6.45187444 C22,2.88280393 19.1140919,0 15.5481256,0 L6.45187444,0 C2.88280393,0 0,2.8859081 0,6.45187444 Z"
+                fill-rule="evenodd"></path>
+              <path fill="inherit" d="M11,6.7 C13.3748244,6.7 15.3,8.62517558 15.3,11 C15.3,13.3748244 13.3748244,15.3 11,15.3 C8.62517558,15.3 6.7,13.3748244 6.7,11 C6.7,8.62517558 8.62517558,6.7 11,6.7 L11,6.7 Z M11,5 C7.6862915,5 5,7.6862915 5,11 C5,14.3137085 7.6862915,17 11,17 C14.3137085,17 17,14.3137085 17,11 C17,7.6862915 14.3137085,5 11,5 Z"
+                fill-rule="evenodd"></path>
+            </svg></a>
+          <a href="https://github.com/agenciagotime" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="social__icon github" viewBox="0 0 22 23">
+              <path fill="#inherit" d="M3.7,3.13 L5.31,4.13 L6,4.62 L6.77,4.37 C9.52406037,3.48550991 12.4859396,3.48550991 15.24,4.37 L16.01,4.62 L16.69,4.18 L18.3,3.18 L18.3,5.92 L18.82,6.42 C19.7062938,7.2067388 20.2395262,8.31643859 20.3,9.5 C20.3,11.59 18.3,13.6 15.3,14.61 C14.5498118,14.8610534 13.9610534,15.4498118 13.71,16.2 C13.4605039,16.918827 13.5681931,17.7134992 14,18.34 C14.1758517,18.5885364 14.270195,18.8855429 14.27,19.19 L14.27,20.26 L7.7,20.26 L7.7,19.19 C7.70852076,18.8822417 7.81345557,18.5849264 8,18.34 C8.43856756,17.7168713 8.55371762,16.9219644 8.31,16.2 C8.06101579,15.4520453 7.476369,14.8636982 6.73,14.61 C3.73,13.61 1.73,11.61 1.73,9.5 C1.78272511,8.32091623 2.30482985,7.21189374 3.18,6.42 L3.7,5.92 L3.7,3.13 L3.7,3.13 Z M19.41,0.5 C19.295815,0.501105776 19.184497,0.535892672 19.09,0.6 L15.77,2.75 C12.6685484,1.75043243 9.33145162,1.75043243 6.23,2.75 L2.91,0.59 C2.81439909,0.529420923 2.70316309,0.498135799 2.59,0.5 C2.264152,0.5 2,0.764151998 2,1.09 L2,5.2 C0.771136618,6.29787584 0.0478983557,7.8528381 0,9.5 C0,12.5 2.51,15 6.15,16.22 C6.37618683,16.2921516 6.55644235,16.4646104 6.63851832,16.687388 C6.72059429,16.9101656 6.69531211,17.1583488 6.57,17.36 C6.19512112,17.8962763 5.99595672,18.5356988 6,19.19 L6,22 L16,22 L16,19.19 C16.0019759,18.5391076 15.802907,17.9034841 15.43,17.37 C15.3046879,17.1683488 15.2794057,16.9201656 15.3614817,16.697388 C15.4435576,16.4746104 15.6238132,16.3021516 15.85,16.23 C19.49,15 22,12.45 22,9.5 C21.9521016,7.8528381 21.2288634,6.29787584 20,5.2 L20,1.09 C20,0.933522271 19.9378395,0.783453462 19.827193,0.672806999 C19.7165465,0.562160536 19.5664777,0.5 19.41,0.5 L19.41,0.5 Z"></path>
+            </svg></a>
+        </div>
+        <p class="copyright">2018 © GOTIME • AGÊNCIA DIGITAL</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Loader -->
+  <script>
+    window.onload = function () {
+      setTimeout(function () {
+        document.querySelector(".loader").style.visibility = "hidden";
+        document.querySelector(".loader").style.opacity = "0";
+      }, 300);
+    };
+  </script>
+
+  <!-- Fonte -->
+  <script rel="preconnect" rel="dns-prefetch" src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: { families: ["Dosis"] }
+    });
+  </script>
+</body>
+
 </html>

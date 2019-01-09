@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1047px" height="639px" viewBox="0 0 1047 639" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M858.501518,510.39313 L948.999998,510.39313 C950.104568,510.39313 950.999998,511.28856 950.999998,512.39313 L950.999999,526.98237 C950.999999,528.862441 949.945355,530.583597 948.270259,531.437247 C939.861844,535.72228 928.727684,537.864796 914.86778,537.864796 C555.719842,540.419005 59.2568388,537.864796 36.1322188,537.864796 C22.2723086,537.864796 11.1381454,535.722278 2.72972926,531.437242 C1.05464149,530.583585 7.8745508e-14,528.862433 7.01660952e-14,526.982367 L0,512.39313 C-4.55001732e-15,511.28856 0.8954305,510.39313 2,510.39313 L89.6079026,510.39313 L89.6079026,20 C89.6079026,8.954305 98.5622076,-2.28897328e-13 109.607903,-2.30926389e-13 L838.501518,-2.30926389e-13 C849.547213,-2.3295545e-13 858.501518,8.954305 858.501518,20 L858.501518,510.39313 Z" id="path-1"></path>
+        <filter x="-8.9%" y="-12.1%" width="117.9%" height="131.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="25" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0227601673   0 0 0 0 0.0811339775   0 0 0 0 0.365779124  0 0 0 0.0617640399 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="flair-case-study-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-214.000000, -2525.000000)">
+        <g id="Macbook" transform="translate(262.000000, 2555.000000)">
+            <g>
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

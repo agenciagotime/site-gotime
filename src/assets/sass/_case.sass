@@ -6,17 +6,21 @@ h3
   justify-content: center
   z-index: 1
 
+.header 
+  position: relative
+  overflow: hidden
+
 .header::before 
   position: absolute
   content: ''
   top: 0
   left: 0
   width: 100%
-  height: 610px
-  background-image: linear-gradient(to right, #F0613C 0%, #F0783C 100%)
+  height: 620px
+  background-image: linear-gradient(-111deg, rgba(247, 156, 92,1) 5.9%,rgba(248, 97, 55,1) 95.9%)
 
 .purple__header::before
-  background-image: linear-gradient(to right,#1D1666 0,#453164 100%)
+  background-image: linear-gradient(to right, #5040b2 0%, #7a69e6 100%)
 
 .header__content 
   position: relative
@@ -25,10 +29,18 @@ h3
 
 .header__text 
   color: $branco
-  text-align: left
+  text-align: center
   p 
-    line-height: 1.3
+    line-height: 1.5
     padding: $space 0 $space*6
+    font-weight: bold
+
+.header__image
+  box-shadow: 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.3)
+
+.logo__ft 
+  width: 180px
+  margin: $space auto
 
 .problem 
   position: relative
@@ -39,7 +51,7 @@ h3
   bottom: 0
   left: 0
   width: 100%
-  height: 450px
+  height: 480px
   background-color: #fbfbfb
 
 .problem__text 
@@ -48,6 +60,22 @@ h3
     font-size: 22px
     line-height: 1.4
     padding: $space 0 $space*6
+
+.problem__image
+  max-width: 900px
+  height: 60vw
+  margin: 0 auto 
+  overflow: hidden
+  box-shadow: 0 6px 30px 0 rgba(0, 0, 0, 0.3)
+  border-radius: 8px 8px 0 0
+  img
+    overflow: hidden
+    animation-name: scrollCover 
+    animation-direction: alternate
+    animation-duration: 7.5s 
+    animation-iteration-count: infinite
+    animation-fill-mode: none
+    animation-timing-function: cubic-bezier(1.000, 0.005, 0.305, 1.000)
     
 h5 
   color: $laranja
@@ -57,7 +85,7 @@ h5
 
 .problem__solution
   position: relative
-  margin: $space*10 0 0
+  margin: $space*15 0 0
   z-index: 1
 
 .solution__text 
@@ -84,21 +112,21 @@ h5
 
 .phone__left 
   position: absolute
-  right: 80%
-  width: 70%
-  bottom: 0
+  right: 70%
+  width: 60%
+  bottom: 10%
 
 .phone__center 
   position: absolute
-  left: 15%
-  width: 80%
-  bottom: 10%
+  left: 20%
+  width: 70%
+  bottom: 25%
 
 .phone__right
   position: absolute
   left: 60%
-  width: 70%
-  bottom: 30%
+  width: 60%
+  bottom: 60%
 
 .product
   position: relative
@@ -118,6 +146,12 @@ h5
   a 
     margin: $space*4 auto
 
+.row__mockups 
+  position: relative
+
+.buttons 
+  display: flex
+
 .full__button
   display: flex
   justify-content: center
@@ -133,6 +167,10 @@ h5
   color: $branco
   text-transform: uppercase
 
+.left__arrow
+  width: $space*4
+  transform: rotate(180deg)
+
 .right__arrow
   width: $space*4
 
@@ -140,7 +178,8 @@ h5
   color: $navy
 
 .navy__background 
-  background-color: $navy
+  background-image: linear-gradient(to right, #5040b2 0%, #7a69e6 100%)
+  
 
 @media only screen and (min-width: 600px)
   .problem__text
@@ -170,6 +209,21 @@ h5
     width: 70%
     max-width: 540px
 
+  .header__circle 
+    display: block
+    position: absolute
+    right: -150px
+    top: -150px
+    width: 250px
+    height: 250px
+    border-radius: 50%
+    background-color: rgba(255, 255, 255, 0.1)
+    opacity: 1
+    transform: scale(2.8)
+    transform-origin: top right
+    transition: all 1.2s ease
+    transition-delay: 1s
+
   .problem 
     margin: $space*10 0 0
     &::before 
@@ -177,7 +231,7 @@ h5
 
   .solution__text 
     display: flex
-    padding: $space*8 0
+    padding: $space*6 0
     justify-content: space-around
 
   .challenge 
@@ -210,4 +264,12 @@ h5
     width: 45%
     left: 65%
     bottom: 25%
+
+@keyframes scrollCover 
+  10% 
+    transform: translateY(0%)
+  50% 
+    transform: translateY(calc(-50% + 285px))
+  100% 
+    transform: translateY(calc(-100% + 60vw))
   
