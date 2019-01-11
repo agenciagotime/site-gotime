@@ -14,7 +14,7 @@ menuOpen.addEventListener("click", function () {
   menuSocial.classList.toggle("animate");
 });
 
-//Loader inicial. Após 0.4s o loader desaparece mostrando a página
+//Loader inicial. Após 0.3s o loader desaparece mostrando a página
 window.onload = function () {
   setTimeout(function () {
     document.querySelector(".loader").style.visibility = "hidden";
@@ -69,6 +69,36 @@ function serviceSelector(index) {
 //Mostrando Tab Website por padrão
 document.getElementById("defaultOpen").click();
 document.getElementById("defaultOpened").style.display = "inherit";
+
+//Animando sections com scroll
+window.sr = ScrollReveal({
+  duration: 1000
+});
+sr.reveal(".about__content", {
+  origin: "bottom",
+  distance: "100%",
+  easing: "cubic-bezier(0.215, 0.610, 0.355, 1.000)",
+  scale: 1,
+  opacity: 1,
+  reset: false,
+  delay: 100
+});
+sr.reveal(".about__solution", {
+  origin: "bottom",
+  distance: "100%",
+  easing: "cubic-bezier(0.215, 0.610, 0.355, 1.000)",
+  scale: 1,
+  opacity: 1,
+  reset: false,
+  delay: 150
+});
+sr.reveal(".case__image", {
+  origin: "right",
+  distance: "50%",
+  easing: "cubic-bezier(0.250, 0.460, 0.450, 0.940)",
+  reset: true,
+  delay: 150
+})
 
 //Scroll into view
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
