@@ -107,11 +107,7 @@
 .header__description
   padding: $space*2 0
   opacity: 0
-  animation: fadeInUp 1.2 .5s forwards
-
-.header__features
-  opacity: 0
-  animation: fadeInUp 1.2 .5s forwards
+  animation: fadeInUp 1.2s .45s both
 
 .check
   position: relative
@@ -426,7 +422,7 @@ input[type=radio]:checked+.radio__button:before
 @keyframes fadeInUp 
   0% 
     opacity: 0
-    transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 50px, 0)
   100%
     opacity: 1
     transform: translate3d(0, 0, 0)

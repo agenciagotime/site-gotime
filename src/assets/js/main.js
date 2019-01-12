@@ -76,16 +76,16 @@ window.sr = ScrollReveal({
 });
 sr.reveal(".about__content", {
   origin: "bottom",
-  distance: "100%",
+  distance: "90px",
   easing: "cubic-bezier(0.215, 0.610, 0.355, 1.000)",
   scale: 1,
   opacity: 1,
   reset: false,
-  delay: 100
+  delay: 300
 });
 sr.reveal(".about__solution", {
   origin: "bottom",
-  distance: "100%",
+  distance: "80px",
   easing: "cubic-bezier(0.215, 0.610, 0.355, 1.000)",
   scale: 1,
   opacity: 1,
@@ -94,10 +94,16 @@ sr.reveal(".about__solution", {
 });
 sr.reveal(".case__image", {
   origin: "right",
-  distance: "50%",
+  distance: "30px",
   easing: "cubic-bezier(0.250, 0.460, 0.450, 0.940)",
   reset: true,
+  opacity: 1,
   delay: 150
+});
+sr.reveal(".case__text", {
+  origin: "bottom",
+  distance: "50px",
+  reset: true
 })
 
 //Scroll into view
